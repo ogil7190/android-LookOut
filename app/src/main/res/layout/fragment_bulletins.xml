@@ -1,0 +1,35 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/notch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clipToPadding="false"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/shadow"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/bottom_tab_layout"
+                android:background="@color/grey" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bulletins_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

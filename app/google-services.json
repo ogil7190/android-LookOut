@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "7449865696",
+    "firebase_url": "https://mycampusdock-12f5a.firebaseio.com",
+    "project_id": "mycampusdock-12f5a",
+    "storage_bucket": "mycampusdock-12f5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7449865696:android:f6eb7d870a2832cc",
+        "android_client_info": {
+          "package_name": "com.mycampusdock.dock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7449865696-ckvo8mgns5l5003274mjvfn6vjiun1id.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0J52Iwc0HZij_jwgnkDcQF9MwJspXYPo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

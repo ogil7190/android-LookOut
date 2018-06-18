@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textSize="25sp"
+        android:scaleType="centerCrop"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_whatshot_black_24dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:text="Discover what's around you"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

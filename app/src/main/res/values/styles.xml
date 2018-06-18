@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/LatoFont</item>
+        <item name="android:buttonStyle">@style/LatoFontButton</item>
+        <item name="android:fontFamily">@font/ubuntu_light</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="HolyBlack" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+    <style name="UbuntuFont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/ubuntu_light</item>
+    </style>
+
+    <style name="LatoFont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/ubuntu_light</item>
+    </style>
+
+    <style name="UbuntuFontButton" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/ubuntu_light</item>
+    </style>
+
+    <style name="LatoFontButton" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/ubuntu_light</item>
+    </style>
+
+    <style name="PinDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+
+    </style>
+
+</resources>

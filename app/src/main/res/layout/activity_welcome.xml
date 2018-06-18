@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.WelcomeActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:id="@+id/image_container"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp">
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/man" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_container"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:text="Welcome OGIL
+
+        Select the categories that you are interested in"
+        android:textColor="@color/cement_black"
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/welcome_text"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text=">"
+        android:id="@+id/done"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button_enable"
+        android:layout_marginBottom="10dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

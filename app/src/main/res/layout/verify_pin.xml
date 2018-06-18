@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:elevation="7dp"
+    android:layout_margin="5dp"
+    android:background="#00ffffff"
+    card_view:cardCornerRadius="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:background="@color/my_blue_light"
+            android:id="@+id/textVerify"
+            android:text="Verify Your PIN"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="10dp"
+            android:layout_below="@+id/textVerify"
+            android:textAlignment="center"
+            android:background="@color/my_blue"
+            android:id="@+id/textHelp"
+            android:text="An email with PIN is sent to dock@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/verifyPin"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textHelp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:hint="●"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:id="@+id/p1"
+                android:elevation="2dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_back"
+                android:textColor="@color/my_blue"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="25dp" />
+            <EditText
+                android:hint="●"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:id="@+id/p2"
+                android:elevation="2dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_back"
+                android:textColor="@color/my_blue"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="25dp" />
+            <EditText
+                android:hint="●"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:id="@+id/p3"
+                android:elevation="2dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_back"
+                android:textColor="@color/my_blue"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="25dp" />
+            <EditText
+                android:hint="●"
+                android:imeOptions="actionDone"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:id="@+id/p4"
+                android:elevation="2dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_back"
+                android:textColor="@color/my_blue"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:padding="5dp"
+            android:layout_below="@id/verifyPin"
+            android:textAlignment="center"
+            android:background="@color/colorAccentSecondary"
+            android:id="@+id/textError"
+            android:text="Wrong PIN Try Again!"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/disableView"
+        android:background="#88ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ProgressBar
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/pinProgress"
+        style="?android:attr/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_below="@id/verifyPin"
+        android:indeterminateTint="@color/colorAccentSecondary" />
+</android.support.v7.widget.CardView>

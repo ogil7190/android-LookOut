@@ -1,0 +1,28 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:text="↑ New Events "
+        android:padding="3dp"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/new_indicator"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/event_list"
+        android:textColor="@color/cement_black"
+        android:background="@drawable/login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="2dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="6dp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:src="@drawable/event3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:scaleType="centerCrop"
+            android:transitionName="banner" />
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".1"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/lato_light"
+            android:maxLines="2"
+            android:text="Android App Development Workshop"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/icon_loc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="105dp"
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="105dp"
+            android:layout_toRightOf="@+id/icon_loc"
+            android:singleLine="true"
+            android:text="Delhi Technical University"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/icon_date"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/icon_loc"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_date_range_black_24dp"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_loc"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/icon_loc"
+            android:singleLine="true"
+            android:text="23-5-2018 to 23-6-2018"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:backgroundTint="#2d000000"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/lnr_heart"
+                android:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/like"
+                android:src="@drawable/lnr_bookmark"
+                android:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/views"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_remove_red_eye_black_24dp"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/event_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/bookmark"
+                android:background="#fff"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:text="FREE"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/event_views"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_toLeftOf="@+id/views"
+                android:singleLine="true"
+                android:text="1.2k"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/network_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/material_red"
+                android:text="NETWORK NOT CONNECTED"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red">
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/content"
+                        android:layout_margin="5dp"
+                        android:ellipsize="end"
+                        android:text="Session Date Sheet!"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <com.ms.square.android.expandabletextview.ExpandableTextView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/description"
+                        android:layout_below="@id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        expandableTextView:maxCollapsedLines="4"
+                        expandableTextView:animDuration="300">
+
+                        <TextView
+                            android:id="@id/expandable_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:ellipsize="end"
+                            android:autoLink="web"
+                            android:textSize="18dp" />
+
+                        <ImageButton
+                            android:id="@id/expand_collapse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="10dp"
+                            android:layout_gravity="right|bottom"
+                            android:background="@android:color/transparent"/>
+
+                    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+                    <LinearLayout
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:alpha="0.4"
+                        android:background="@color/black"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:id="@+id/creator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="OGIL"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/back_notification"
+                            android:maxLength="2"
+                            android:padding="2dp"
+                            android:text="9+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/attachment"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/back_notification"
+                            android:padding="5dp"
+                            android:src="@drawable/lnr_pushpin"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/files"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:clipToPadding="false"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/show_files"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="centerCrop"
+                        android:layout_below="@+id/files"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_arrow_drop_down_circle_black_24dp"
+                        android:tint="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/card"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/message"
+        android:layout_below="@+id/shadow"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:clipToPadding="false"
+        android:scrollbars="none" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toStartOf="@+id/send"
+        android:background="@drawable/login_back"
+        android:hint="Send Message"
+        android:maxHeight="80dp"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/login_button_enable"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Send"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>

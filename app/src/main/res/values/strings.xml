@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lookout</string>
+
+    <array name="tab_name">
+        <item>Home</item>
+        <item>Bulletin</item>
+        <item>Discover</item>
+        <item>News</item>
+        <item>Profile</item>
+    </array>
+
+</resources>

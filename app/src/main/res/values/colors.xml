@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary1">#21ADCF</color>
+    <color name="colorPrimaryDark1">#21ADCF</color>
+    <color name="colorAccent1">#cc0000</color>
+
+    <color name="colorPrimary">@color/my_blue</color>
+    <color name="colorPrimaryDark">@color/my_blue_light</color>
+    <color name="colorAccent">@color/material_yellow</color>
+    <color name="colorAccentSecondary">#FFCC00</color>
+
+    <color name="yellow">#ffb741</color>
+    <color name="cyan">#2cd6ff</color>
+    <color name="green">#5adc92</color>
+    <color name="pink">#f99cc1</color>
+    <color name="purple">#bd7ffa</color>
+    <color name="red">#fa7e72</color>
+
+    <color name="violet">#673AB7</color>
+    <color name="violet_trans_80">#BF673AB7</color>
+    <color name="orange">#F07B3F</color>
+    <color name="cyan2">#00afac</color>
+
+    <color name="grey">#e7e7e7</color>
+    <color name="light_grey">#f5f5f5</color>
+    <color name="red_logout">#E95354</color>
+    <color name="my_blue">#349fea</color>
+    <color name="my_blue_light">#2e94de</color>
+    <color name="dark_grey">#d2d2d2</color>
+    <color name="cement_black">#505050</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent_80">#BFFFFFFF</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="light_black">#363636</color>
+    <color name="secondary_text">#727272</color>
+    <color name="chrome_grey">#F2F2F2</color>
+    <color name="txt_profile">#2C4058</color>
+
+
+    <!--shimmer-->
+    <color name="demo_light_transparent">#16000000</color>
+    <color name="demo_dark_transparent">#24000000</color>
+    <color name="black">#000000</color>
+    <color name="black_25_transparent">#40000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_trans">#c7c7c7</color>
+    <color name="green2">#70c050</color>
+
+    <color name="material_red">#fc5959</color>
+    <color name="material_orange">#FFFF7043</color>
+    <color name="material_yellow">#FFFFAB40</color>
+    <color name="material_lemon">#e7dc09</color>
+    <color name="material_light_green">#93e139</color>
+    <color name="material_dark_green">#5ccf97</color>
+    <color name="material_cyan">#03ce9d</color>
+    <color name="material_light_blue">#59c5f4</color>
+    <color name="material_blue">#76a8fa</color>
+    <color name="material_purple">#5064d1</color>
+    <color name="material_baby_pink">#ff80ab</color>
+    <color name="material_skin">#f5847a</color>
+</resources>
